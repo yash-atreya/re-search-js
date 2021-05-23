@@ -2,7 +2,7 @@
 
 ## Installation
 ```sh
-npm install re-search
+npm install @yashatreya/re-search-js
 ```
 
 ## Usage

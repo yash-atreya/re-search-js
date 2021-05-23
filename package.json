@@ -1,5 +1,5 @@
 {
-  "name": "re-search",
+  "name": "@yashatreya/re-search-js",
   "version": "0.0.1",
   "description": "JS client for re-search",
   "main": "index.js",
