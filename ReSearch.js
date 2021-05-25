@@ -8,9 +8,9 @@ class ReSearch {
     appID = null;
     apiKey = null;
     index = null;
-    SAVE_URL = 'http://35.242.249.83:3000/saveObjects';
-    REMOVE_URL = 'http://35.242.249.83:3000/removeObjects';
-    ALTER_INDEX_URL = 'http://35.242.249.83:3000/alterIndex';
+    SAVE_URL = 'https://352a93cc069d.ngrok.io/saveObjects';
+    REMOVE_URL = 'https://352a93cc069d.ngrok.io/removeObjects';
+    ALTER_INDEX_URL = 'https://352a93cc069d.ngrok.io/alterIndex';
     // METHODS
     /**
      * @param {string} appID - your projectID
@@ -37,12 +37,13 @@ class ReSearch {
                 throw new Error(`Object at index ${i} does not have an objectID`);
             }
         }
-        axios.post(`${this.SAVE_URL}`, {
+        const result = await axios.post(`${this.SAVE_URL}`, {
             objects: array,
             apiKey: this.apiKey,
             indexName: this.index,
             projectID: this.appID,
         });
+        return result.data;
     }
 
     // REMOVE

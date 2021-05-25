@@ -1,6 +1,6 @@
 {
   "name": "@yashatreya/re-search-js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "JS client for re-search",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "Yash Atreya",
   "license": "ISC",
   "dependencies": {
-    "@nempet/is-null-or-undefined": "^1.0.3",
+    "@nempet/is-null-or-undefined": "1.0.3",
     "axios": "0.21.1"
   }
 }
